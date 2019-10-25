@@ -1,0 +1,20 @@
+#include<stdio.h>
+void print(int);
+int main()
+{ int n;
+scanf("%d",&n);
+print(n);
+return 0;
+}
+void print(int n)
+{ if(n==0)
+  { printf("*   *\n");
+    printf("*   *\n");
+    return;
+
+  }
+   printf("*   *\n");
+   printf("*   *\n");
+   printf("*****\n");
+   print(n-1);
+}
